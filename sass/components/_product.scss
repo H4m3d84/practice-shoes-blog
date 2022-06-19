@@ -1,0 +1,33 @@
+.prod {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__image {
+    width: 30rem;
+    height: 30rem;
+  }
+  &__price {
+    font-weight: 900;
+  }
+  &__shipping {
+  }
+  &__desc {
+  }
+  &__moreinfo {
+    margin-bottom: 1.2rem;
+  }
+  &__list {
+    margin-left: 2.4rem;
+  }
+  &__item {
+  }
+  &__item {
+  }
+  &__item {
+  }
+  &__btn {
+    align-self: start;
+  }
+}
