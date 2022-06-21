@@ -8,26 +8,53 @@
     width: 30rem;
     height: 30rem;
   }
+
   &__price {
     font-weight: 900;
+    font-size: 3rem;
   }
+
   &__shipping {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #888;
+    font-weight: 800;
   }
+
   &__desc {
   }
-  &__moreinfo {
+
+  &__moreinfo:link,
+  &__moreinfo:visited {
     margin-bottom: 1.2rem;
+    color: black;
   }
+
+  &__moreinfo:hover,
+  &__moreinfo:active {
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+  }
+
   &__list {
     margin-left: 2.4rem;
+    list-style: square;
   }
+
   &__item {
   }
-  &__item {
-  }
-  &__item {
-  }
+
   &__btn {
     align-self: start;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
   }
 }

@@ -9,11 +9,17 @@ html {
 }
 
 body {
-  padding: 2.4rem;
+  margin: 1.2rem;
+  border: 5px solid #000;
+  font-family: sans-serif;
 }
 
 .heading-primary {
   font-size: 3.2rem;
+  text-align: center;
+  background-color: #eee;
+  text-transform: uppercase;
+  margin: 2.4rem 0;
 }
 
 .heading-secondary {
@@ -32,15 +38,37 @@ body {
 }
 .prod__price {
   font-weight: 900;
+  font-size: 3rem;
 }
-.prod__moreinfo {
+.prod__shipping {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #888;
+  font-weight: 800;
+}
+.prod__moreinfo:link, .prod__moreinfo:visited {
   margin-bottom: 1.2rem;
+  color: black;
+}
+.prod__moreinfo:hover, .prod__moreinfo:active {
+  margin-bottom: 1.2rem;
+  text-decoration: none;
 }
 .prod__list {
   margin-left: 2.4rem;
+  list-style: square;
 }
 .prod__btn {
   align-self: start;
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.prod__btn:hover {
+  color: black;
+  background-color: white;
 }
 
 /*# sourceMappingURL=output.css.map */
