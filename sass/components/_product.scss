@@ -2,11 +2,12 @@
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  border: 5px solid #000;
 
   &__image {
     width: 30rem;
     height: 30rem;
+    margin-bottom: 2.4rem;
   }
 
   &__price {
@@ -19,20 +20,21 @@
     font-size: 1.4rem;
     color: #888;
     font-weight: 800;
+    margin-bottom: 2.4rem;
   }
 
   &__desc {
+    margin-bottom: 1.2rem;
   }
 
   &__moreinfo:link,
   &__moreinfo:visited {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
     color: black;
   }
 
   &__moreinfo:hover,
   &__moreinfo:active {
-    margin-bottom: 1.2rem;
     text-decoration: none;
   }
 
@@ -42,15 +44,17 @@
   }
 
   &__item {
+    margin-bottom: 1.2rem;
   }
 
   &__btn {
-    align-self: start;
     border: none;
     background-color: black;
     color: #fff;
     font-size: 2rem;
     text-transform: uppercase;
+    height: 5rem;
+    border-top: 5px solid black;
 
     &:hover {
       color: black;
