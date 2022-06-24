@@ -50,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 5px solid #000;
+  position: relative;
 }
 .prod__image {
   width: 30rem;
@@ -71,11 +72,41 @@ body {
   margin-bottom: 1.2rem;
 }
 .prod__moreinfo:link, .prod__moreinfo:visited {
-  margin-bottom: 2.4rem;
   color: black;
 }
 .prod__moreinfo:hover, .prod__moreinfo:active {
   text-decoration: none;
+}
+.prod__colors {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+.prod__color {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 2.4rem 0;
+}
+.prod__color--1 {
+  background-color: black;
+}
+.prod__color--2 {
+  background-color: blue;
+}
+.prod__color--3 {
+  background-color: red;
+}
+.prod__color--4 {
+  background-color: yellow;
+}
+.prod__color--5 {
+  background-color: green;
+}
+.prod__color--6 {
+  background-color: brown;
+}
+.prod__color:hover {
+  cursor: pointer;
 }
 .prod__list {
   margin-left: 2.4rem;
@@ -96,6 +127,21 @@ body {
 .prod__btn:hover {
   color: black;
   background-color: white;
+}
+.prod::before {
+  content: "Sale";
+  background-color: red;
+  text-transform: uppercase;
+  padding: 0.8rem 1.4rem;
+  position: absolute;
+  align-self: flex-start;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.2rem;
 }
 
 .container {

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   border: 5px solid #000;
+  position: relative;
 
   &__image {
     width: 30rem;
@@ -29,13 +30,47 @@
 
   &__moreinfo:link,
   &__moreinfo:visited {
-    margin-bottom: 2.4rem;
     color: black;
   }
 
   &__moreinfo:hover,
   &__moreinfo:active {
     text-decoration: none;
+  }
+
+  &__colors {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  &__color {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 2.4rem 0;
+
+    &--1 {
+      background-color: black;
+    }
+    &--2 {
+      background-color: blue;
+    }
+    &--3 {
+      background-color: red;
+    }
+    &--4 {
+      background-color: yellow;
+    }
+    &--5 {
+      background-color: green;
+    }
+    &--6 {
+      background-color: brown;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__list {
@@ -60,5 +95,21 @@
       color: black;
       background-color: white;
     }
+  }
+
+  &::before {
+    content: 'Sale';
+    background-color: red;
+    text-transform: uppercase;
+    padding: 0.8rem 1.4rem;
+    position: absolute;
+    align-self: flex-start;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.2rem;
   }
 }
