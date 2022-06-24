@@ -47,8 +47,6 @@ body {
 
 .prod {
   font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
   border: 5px solid #000;
   position: relative;
 }
@@ -79,13 +77,15 @@ body {
 }
 .prod__colors {
   list-style: none;
-  display: flex;
-  gap: 1.8rem;
 }
 .prod__color {
   width: 2.4rem;
   height: 2.4rem;
   margin: 2.4rem 0;
+  display: inline-block;
+}
+.prod__color:not(:last-child) {
+  margin-right: 1.2rem;
 }
 .prod__color--1 {
   background-color: black;
@@ -123,6 +123,7 @@ body {
   text-transform: uppercase;
   height: 5rem;
   border-top: 5px solid black;
+  width: 100%;
 }
 .prod__btn:hover {
   color: black;
@@ -134,7 +135,6 @@ body {
   text-transform: uppercase;
   padding: 0.8rem 1.4rem;
   position: absolute;
-  align-self: flex-start;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
