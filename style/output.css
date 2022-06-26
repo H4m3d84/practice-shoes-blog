@@ -18,7 +18,7 @@ body {
   text-align: center;
   background-color: #eee;
   text-transform: uppercase;
-  padding: 2.4rem;
+  padding: 1.6rem;
 }
 
 .heading-secondary {
@@ -51,11 +51,6 @@ body {
   flex-direction: column;
   border: 5px solid #000;
   position: relative;
-}
-.prod__image {
-  width: 30rem;
-  height: 30rem;
-  margin-bottom: 2.4rem;
 }
 .prod__price {
   font-weight: 900;
@@ -147,6 +142,27 @@ body {
 .container {
   width: 80rem;
   margin: 0 auto;
+}
+
+.prod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+}
+.prod__heading {
+  grid-column: 1/-1;
+}
+.prod__image {
+  width: 26rem;
+}
+.prod__infos {
+  margin-top: 2.4rem;
+}
+.prod__details {
+  margin-top: 2.4rem;
+}
+.prod__btn {
+  grid-column: 1/-1;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -2,3 +2,25 @@
   width: 80rem;
   margin: 0 auto;
 }
+
+.prod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
+  &__image {
+    width: 26rem;
+  }
+  &__infos {
+    margin-top: 2.4rem;
+  }
+  &__details {
+    margin-top: 2.4rem;
+  }
+  &__btn {
+    grid-column: 1 / -1;
+  }
+}
